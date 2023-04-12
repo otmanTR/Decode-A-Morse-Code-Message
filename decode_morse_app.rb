@@ -34,3 +34,11 @@ def get_char(char)
 end
 
 get_char(".-")
+
+# decoding a word using with get_char and mapping hashes
+
+def get_word(word)
+    word.split.map { |char| get_char(char) }.join
+  end
+
+  get_word("-- -.--   -. .- -- .")
