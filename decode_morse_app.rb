@@ -42,3 +42,11 @@ def get_word(word)
   end
 
   get_word("-- -.--   -. .- -- .")
+  
+  # decoding a santences with using get_sentences, get_word and mapping hashes
+
+def get_sentences(sentence)
+    sentence.split('  ').map { |word| get_word(word) }.join('  ')
+  end
+
+  get_sentences("      .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
