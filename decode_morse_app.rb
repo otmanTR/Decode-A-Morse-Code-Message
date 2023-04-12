@@ -33,20 +33,20 @@ def get_char(char)
   @morse_alphabet[char].upcase
 end
 
-get_char(".-")
+get_char('.-')
 
 # decoding a word using with get_char and mapping hashes
 
 def get_word(word)
-    word.split.map { |char| get_char(char) }.join
-  end
+  word.split.map { |char| get_char(char) }.join
+end
 
-  get_word("-- -.--   -. .- -- .")
-  
-  # decoding a santences with using get_sentences, get_word and mapping hashes
+get_word('-- -.--   -. .- -- .')
+
+# decoding a santences with using get_sentences, get_word and mapping hashes
 
 def get_sentences(sentence)
-    sentence.split('  ').map { |word| get_word(word) }.join('  ')
-  end
+  sentence.split('  ').map { |word| get_word(word) }.join('  ')
+end
 
-  get_sentences("      .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
+get_sentences('      .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
