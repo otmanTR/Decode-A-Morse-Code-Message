@@ -25,7 +25,7 @@ puts get_char('.-')
 
 def get_word(word)
   word.split.map { |char| get_char(char) }.join
-end
+
 
 puts get_word('-- -.--   -. .- -- .')
 
